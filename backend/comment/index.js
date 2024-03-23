@@ -13,7 +13,7 @@ import userRoute from './src/routes/userRoute.js'
 
 app.use('/comment',userRoute)
 app.get('/comment',(req,res)=>{
-    res.send('This is user.')
+    res.send('This is comment.')
 })
  
 app.listen(PORT,()=>{

@@ -13,7 +13,7 @@ import userRoute from './src/routes/userRoute.js'
 
 app.use('/post',userRoute)
 app.get('/post',(req,res)=>{
-    res.send('This is user.')
+    res.send('This is post.')
 })
  
 app.listen(PORT,()=>{
