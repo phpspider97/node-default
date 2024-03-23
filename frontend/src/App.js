@@ -65,7 +65,7 @@ function App() {
     },[])
     return (
         <div className="container p-5">
-            <h3>Add User and another Data 1</h3>
+            <h3>Add User and another Data 3</h3>
             <input type="radio" name="role" onChange={()=>{setRole(1)}} /> User &nbsp;&nbsp;
             <input type="radio" name="role" onChange={()=>{setRole(2)}} /> Post &nbsp;&nbsp;
             <input type="radio" name="role" onChange={()=>{setRole(3)}} /> Comment <br /><br />
