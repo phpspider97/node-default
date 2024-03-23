@@ -1,0 +1,31 @@
+version: '1.0'
+
+services: 
+  backend_user_service:
+    build: ./backend/user
+    restart: always
+    ports:
+      - "3001:3001"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/mydatabase
+  backend_post_service:
+    build: ./backend/post
+    restart: always
+    ports:
+      - "3002:3002"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/mydatabase    
+  backend_comment_service:
+    build: ./backend/comment
+    restart: always
+    ports:
+      - "3003:3003"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/mydatabase 
+  frontend_service:
+    build: ./frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/mydatabase        
